@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eselami</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/b86bb88d76.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+  <body>
+    <section class="header_top">
+      <nav class="top">
+        <ul class="reset">
+          <li>
+            <p>
+              <a href="#">Perakende Alışveriş</a>
+            </p>
+          </li><li>
+            <p>
+              <a href="#">Toptan Alışveriş</a>
+            </p>
+          </li><li>
+            <p>
+              <a href="#">Üyelik</a>
+            </p>
+          </li><li>
+            <p>
+              <a href="#">Kaynaklar</a>
+            </p>
+          </li><li>
+            <p>
+              <a href="#">Kurumsal</a>
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <ul class="login_register reset">
+        <li id="login">
+          <i class="fa-solid fa-user"></i>
+          <p>Giriş</p>
+          <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Giriş</h1>
+              <label for="email">Email</label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+              <label for="psw">Password</label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <button type="submit" class="btn">Login</button>
+            </form>
+          </div>
+        </li><li id="register">
+          <i class="fa-solid fa-users"></i>
+          <p>Kaydol</p>
+        </li>
+        <li id="langs">
+          <img src="images/tr.svg" width="15" height="15" alt="flag">
+          <p>Türkçe</p>
+          <i class="fa-solid fa-caret-down"></i>
+          <ul class="reset popup" id="langs">
+            <li>
+              <a href="en">
+                <img src="images/en.svg" alt="dil" width="15" height="15">
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <header>
+      <a id="logo" href="index.html">
+        <img src="images/logo.png" alt="eselami-logo" width="180" height="40" loading="lazy">
+      </a>
+      <form class="quick_search" method="GET">
+        <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="search" placeholder="Ürünleri Ara" autocomplete="off">
+      </form>
+      <ul class="reset">
+        <li class="favourite_heart">
+          <a href="#">
+            <i class="fa-solid fa-heart"></i>
+            Favorilerim
+          </a>
+        </li><li class="basket">
+          <a href="#">
+            <i class="fa-solid fa-basket-shopping"></i>
+            Sepetim
+          </a>
+        </li>
+      </ul>
+    </header>
+    <section class="categories">
+      <nav class="top">
+        <ul class="reset">
+          <li>
+            <a href="kategori.html">
+              Giyim
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Ayakkabı
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Sağlık Ve Güzellik
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Aksesuar
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Ev Ve Mobilya
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Elektronik
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Yapı Market
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Spor Ve Outdoor
+            </a>
+          </li><li>
+            <a href="kategori.html">
+              Ev Eşyaları
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <main>
+      <section class="categories_menu">
+        <section class="filter">
+          <form class="filter_group" method="get">
+            <section class="brands">
+              <h4>Markalar</h4>
+              <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input type="search" class="brands_input" name="keyword" placeholder="Marka Ara">
+              <ul class="reset">
+                <li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Marka 1
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Marka 2
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Marka 3
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section class="gender" class="checkbox_left">
+              <h4>Cinsiyet</h4>
+              <ul class="reset">
+                <li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Erkek
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Kadın
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Çocuk
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section class="categories_left">
+              <h4>Kategoriler</h4>
+              <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input type="search" class="categories_input" name="keyword" placeholder="Kategori Ara">
+              <ul class="reset">
+                <li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Kategori 1
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Kategori 2
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Kategori 3
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section class="size">
+              <h4>Beden</h4>
+              <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input type="search" class="size_search" name="keyword" placeholder="Beden Ara">
+              <ul class="reset">
+                <li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    S
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    M
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                  L
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    XL
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section class="colors">
+              <h4>Renkler</h4>
+              <ul class="reset">
+                <li>
+                  <a href="#" class="color_button">
+                    <img src="images/siyah.png" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/mor.jpg" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/mavi-renk.png" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/kırmızı.jpg" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/mor.jpg" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/sarı.webp" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/turuncu.png" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/pembe.jpg" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/yeşil.png" width="35px" height="25px">
+                  </a>
+                </li><li>
+                  <a href="#" class="color_button">
+                    <img src="images/siyah.png" width="35px" height="25px">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="price_left">
+              <h4>Fiyat</h4>
+              <ul class="reset">
+                <li>
+                  <input type="number" min="0" name="low_price" placeholder="En Düşük">
+                  <input type="number" min="0" name="high_price" placeholder="En Yüksek">
+                  <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </li><li>
+                <label class="example-radio">
+                    0-60 TL
+                    <input type="radio" name="radio">
+                </label><label class="example-radio">
+                    60-150 TL
+                    <input type="radio" name="radio">
+                </label><label class="example-radio">
+                    150-300 TL
+                    <input type="radio" name="radio">
+                </label>
+               </li>
+              </ul>
+            </section>
+            <section class="materials">
+              <h4>Materyal</h4>
+              <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input type="search" class="categories_input" name="keyword" placeholder="Materyal Ara">
+              <ul class="reset">
+                <li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Triko
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    Deri
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    %100 Pamuklu
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section class="product_point">
+              <h4>Ürün Değerlendirmesi</h4>
+              <ul class="reset">
+                <li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    4 Yıldız Ve Üzeri
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    3 Yıldız Ve Üzeri
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    2 Yıldız Ve Üzeri
+                  </label>
+                </li><li>
+                  <label>
+                  <input type="checkbox" class="checkbox_left">
+                    1 Yıldız Ve Üzeri
+                  </label>
+                </li>
+              </ul>
+            </section>
+          </form>
+        </section>
+        <section class="product_list">
+          <section class="categories_right">
+            <h1>Kategoriler</h1><form class="product_list_form" method="get">
+          <select>
+            <option value="Çok Satanlar">Çok Satanlar</option>
+            <option value="Çok Satanlar">En Düşük Fiyat</option>
+            <option value="Çok Satanlar">En Yüksek Fiyat</option>
+          </select>
+          </form>
+            <p>Listelenen Toplam Ürün Sayısı :</p>
+          </section>
+          <section class="filters_right_clear">
+          <p class="filters_right">
+            <span class="filter_click">X</span><span class="filter_click">X</span><span class="filter_click">X</span>
+          </p>
+          </section>
+          <section class="filters_img">
+            <ul class="reset">
+              <li>
+                <picture>
+                  <img src="images/ayakkabı-right.webp" class="ayakkabı_right" alt="ayakkabı" width="290" height="300">
+                </picture>
+                <span class="free_shipping">Kargo Bedava</span>
+                <span class="favourite_heart">
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+                <h3>Ürün Adı</h3>
+                <span class="stars">
+                  <i class="star1-hover fa fa-star-o"></i>
+                  <i class="star2-hover fa fa-star-o"></i>
+                  <i class="star3-hover fa fa-star-o"></i>
+                  <i class="star4-hover fa fa-star-o"></i>
+                  <i class="star5-hover fa fa-star-o"></i>
+                </span>
+                <p class="price">Fiyat</p>
+                <p class="size">Beden</p>
+                <p class="color">Renk</p>
+                <p class="add_basket">Sepete Ekle</p>
+              </li><li>
+                <picture>
+                  <img src="images/ayakkabı-right.webp" class="ayakkabı_right" alt="ayakkabı" width="290" height="300">
+                </picture>
+                <span class="free_shipping">Kargo Bedava</span>
+                <span class="favourite_heart">
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+                <h3>Ürün Adı</h3>
+                <span class="stars">
+                  <i class="star1-hover fa fa-star-o"></i>
+                  <i class="star2-hover fa fa-star-o"></i>
+                  <i class="star3-hover fa fa-star-o"></i>
+                  <i class="star4-hover fa fa-star-o"></i>
+                  <i class="star5-hover fa fa-star-o"></i>
+                </span>
+                <p class="price">Fiyat</p>
+                <p class="size">Beden</p>
+                <p class="color">Renk</p>
+                <p class="add_basket">Sepete Ekle</p>
+              </li><li>
+                <picture>
+                  <img src="images/ayakkabı-right.webp" class="ayakkabı_right" alt="ayakkabı" width="290" height="300">
+                </picture>
+                <span class="free_shipping">Kargo Bedava</span>
+                <span class="favourite_heart">
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+                <h3>Ürün Adı</h3>
+                <span class="stars">
+                  <i class="star1-hover fa fa-star-o"></i>
+                  <i class="star2-hover fa fa-star-o"></i>
+                  <i class="star3-hover fa fa-star-o"></i>
+                  <i class="star4-hover fa fa-star-o"></i>
+                  <i class="star5-hover fa fa-star-o"></i>
+                </span>
+                <p class="price">Fiyat</p>
+                <p class="size">Beden</p>
+                <p class="color">Renk</p>
+                <p class="add_basket">Sepete Ekle</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <ul class="reset">
+        <li>
+          <h3>Perakende Alışveriş</h3>
+          <ol class="reset">
+            <li>
+              <a href="#">Giyim</a>
+            </li><li>
+              <a href="#">Ayakkabı</a>
+            </li><li>
+              <a href="#">Aksesuar</a>
+            </li><li>
+              <a href="#">Elektronik</a>
+            </li>
+          </ol>
+        </li><li>
+          <h3>Toptan Alışveriş</h3>
+          <ol class="reset">
+            <li>
+              <a href="#">Ürünler</a>
+            </li><li>
+              <a href="#">Yurtdışı Alım</a>
+            </li><li>
+              <a href="#">E-İhracat Üyelik</a>
+            </li><li>
+              <a href="#">Üyeler</a>
+            </li>
+          </ol>
+        </li><li>
+          <h3>Kurumsal</h3>
+          <ol class="reset">
+            <li>
+              <a href="#">Hakkımızda</a>
+            </li>
+          </ol>
+        </li><li>
+          <h3>Sosyal Medya Hesapları</h3>
+          <dl class="links">
+            <dt>Türkçe<dt>
+              <dd>
+                <a href="#" target="_blank">Facebook</a>
+              </dd>
+              <dd>
+                <a href="#" target="_blank">Twitter</a>
+              </dd>
+              <dd>
+                <a href="#" target="_blank">İnstagram</a>
+              </dd>
+          </dl>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
